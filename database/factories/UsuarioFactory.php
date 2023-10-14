@@ -21,7 +21,6 @@ class UsuarioFactory extends Factory
         'nombre' => fake()->firstName(),
         'apellido' => fake()->lastName(),
         'correo' => fake()->email(),
-        'fecha_registro' => fake()->date(),
         ];
     }
 }

@@ -32,11 +32,10 @@ class UsuarioController extends Controller
     {
         $data = $request->all();
 
-        $usuario = new Usuario([
-            'nombre' => $data['nombre'],
-            'apellido' => $data['apellido'],
-            'correo' => $data['correo'],
-        ]);
+        $usuario = new Usuario();
+        $usuario->nombre = $data['nombre'];
+        $usuario->apellido = $data['apellido'];
+        $usuario->correo = $data['correo'];
 
         $usuario->save();
 
